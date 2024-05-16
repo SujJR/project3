@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Manager Dashboard - {{ restaurant_manager.restaurant_name1 }}</h1>
+  <p>Restaurant Name: {{ restaurant_manager.restaurant_name }}</p>
+  <p>Order ID: {{ order_id }}</p>
+  <p>Time: {{ time }}</p>
+  <p>Date: {{ date }}</p>
+  <p>Table: {{ table }}</p>
+  <p>Order Name: {{ order_name }}</p>
+  <p>Order Price: {{ order_price }}</p>
+  <p>Customer Name: {{ customer_name }}</p>
+  <p>Customer Full Name: {{ customer_fname }}</p>
+  <p>Customer Phone Number: {{ customer_no }}</p>
+  <p>Customer Email: {{ customer_email }}</p>
+
+{% endblock %}

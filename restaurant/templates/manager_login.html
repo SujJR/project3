@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/css/styles.css') }}">
+<body>
+    <div class="container">
+        <h1>Manager Login</h1>
+        <form method="POST" action="{{ url_for('manager_login_page') }}">
+            {{ form.csrf_token }}
+            <div class="form-group">
+                {{ form.username.label }}
+                {{ form.username(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.password.label }}
+                {{ form.password(class="form-control") }}
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+    </div>
+</body>
+</html>
